@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.CustomerMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.Customer">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="gender" column="gender" jdbcType="INTEGER"/>
+            <result property="tel" column="tel" jdbcType="VARCHAR"/>
+            <result property="qq" column="qq" jdbcType="VARCHAR"/>
+            <result property="job" column="job" jdbcType="INTEGER"/>
+            <result property="source" column="source" jdbcType="INTEGER"/>
+            <result property="seller" column="seller" jdbcType="INTEGER"/>
+            <result property="inputuser" column="inputUser" jdbcType="INTEGER"/>
+            <result property="inputtime" column="inputTime" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="positivetime" column="positiveTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,age,
+        gender,tel,qq,
+        job,source,seller,
+        inputUser,inputTime,status,
+        positiveTime
+    </sql>
+</mapper>
